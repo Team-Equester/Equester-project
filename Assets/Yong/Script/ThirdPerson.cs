@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class ThirdPerson : MonoBehaviour 
 {
 	public Transform player;                                          
@@ -23,8 +23,10 @@ public class ThirdPerson : MonoBehaviour
 	private float defaultFOV;                                         
 	private float targetFOV;                                          
 	private float targetMaxVerticalAngle;                             
-	private bool isCustomOffset;                                      
-
+	private bool isCustomOffset;
+	public PlayerInput playerInput;
+	private float h;
+	private float v;
 
 	public float GetH { get { return angleH; } }
 
@@ -39,7 +41,6 @@ public class ThirdPerson : MonoBehaviour
 		smoothCamOffset = camOffset;
 		defaultFOV = cam.GetComponent<Camera>().fieldOfView;
 		angleH = player.eulerAngles.y;
-
 		ResetTargetOffsets ();
 		ResetFOV ();
 		ResetMaxVerticalAngle();
@@ -51,9 +52,22 @@ public class ThirdPerson : MonoBehaviour
 
 	void Update()
 	{
+		Vector2 look = playerInput.actions["Look"].ReadValue<Vector2>();
+		if (look.x >= 0.3f)
+		{
+			h = 0.1f;
+		}
+		else if (look.x <= -0.3f)
+		{
+			h = -0.1f;
+		}
+		else
+		{
+			h = 0;
+		}
 
-		angleH += Mathf.Clamp(Input.GetAxis("Mouse X"), -1, 1) * horizontalAimingSpeed;
-		angleV += Mathf.Clamp(Input.GetAxis("Mouse Y"), -1, 1) * verticalAimingSpeed;
+		angleH += Mathf.Clamp(h, -1, 1) * horizontalAimingSpeed;
+		angleV += Mathf.Clamp(0f, -1, 1) * verticalAimingSpeed;
 
 		angleV = Mathf.Clamp(angleV, minVerticalAngle, targetMaxVerticalAngle);
 

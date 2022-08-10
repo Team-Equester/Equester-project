@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PlayerMoveCode : GenericBehaviour
 {
@@ -17,6 +18,7 @@ public class PlayerMoveCode : GenericBehaviour
 	private bool jump;                              
 	private bool isColliding;                       
 	public bool isLock;
+	public PlayerInput playerInput;
 
 	void Start()
 	{
@@ -36,14 +38,19 @@ public class PlayerMoveCode : GenericBehaviour
 
 	void Update()
 	{
-		if (!jump && Input.GetKeyDown(KeyCode.Space) && behaviourManager.IsCurrentBehaviour(this.behaviourCode) && !behaviourManager.IsOverriding())
+		//if (!jump && Input.GetKeyDown(KeyCode.Space) && behaviourManager.IsCurrentBehaviour(this.behaviourCode) && !behaviourManager.IsOverriding())
+		//{
+			//jump = true;
+		//}
+		if (!jump && playerInput.actions["Jump"].triggered && behaviourManager.IsCurrentBehaviour(this.behaviourCode) && !behaviourManager.IsOverriding())
 		{
 			jump = true;
 		}
 
 
 		//Press ESC pause
-		if (Input.GetKeyDown(KeyCode.Escape))
+		//if (Input.GetKeyDown(KeyCode.Escape))
+		if (playerInput.actions["Pause"].triggered)
 		{
 			isLock = !isLock;
 			if (isLock)
@@ -130,8 +137,9 @@ public class PlayerMoveCode : GenericBehaviour
 
 		Vector2 dir = new Vector2(horizontal, vertical);
 		speed = Vector2.ClampMagnitude(dir, 1f).magnitude;
-
-		speedSeeker += Input.GetAxis("Mouse ScrollWheel");
+		Vector2 moveDirect = playerInput.actions["Look"].ReadValue<Vector2>();
+		//speedSeeker += Input.GetAxis("Mouse ScrollWheel");
+		speedSeeker += moveDirect.y;
 		speedSeeker = Mathf.Clamp(speedSeeker, walkSpeed, runSpeed);
 		speed *= speedSeeker;
 		if (behaviourManager.IsSprinting())

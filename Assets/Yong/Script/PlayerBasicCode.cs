@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using UnityEngine.InputSystem;
 public class PlayerBasicCode : MonoBehaviour
 {
 	public Transform playerCamera;                        
@@ -25,8 +25,9 @@ public class PlayerBasicCode : MonoBehaviour
 	private List<GenericBehaviour> overridingBehaviours;  
 	private Rigidbody rBody;                             
 	private int groundedBool;                             
-	private Vector3 colExtents;                           
-
+	private Vector3 colExtents;
+	private PlayerInput playerInput;
+	private Vector2 move;
 
 	public float GetH { get { return h; } }
 	public float GetV { get { return v; } }
@@ -52,23 +53,48 @@ public class PlayerBasicCode : MonoBehaviour
 		vFloat = Animator.StringToHash("V");
 		camScript = playerCamera.GetComponent<ThirdPerson> ();
 		rBody = GetComponent<Rigidbody> ();
-
+		
 		groundedBool = Animator.StringToHash("Grounded");
 		colExtents = GetComponent<Collider>().bounds.extents;
+		playerInput = GetComponent<PlayerInput>();
 	}
 
 	void Update()
 	{
-		h = Input.GetAxis("Horizontal");
-		v = Input.GetAxis("Vertical");
+		//h = Input.GetAxis("Horizontal");
+		//v = Input.GetAxis("Vertical");
+		move = playerInput.actions["Move"].ReadValue<Vector2>();
 
-
+		if (move.x >= 0.1f)
+		{
+			h = 1;
+		}
+		else if (move.x <= -0.1f)
+        {
+			h = -1;
+        }
+		else
+        {
+			h = 0;
+        }
+		if (move.y >= 0.1f)
+		{
+			v = 1;
+		}
+		else if (move.y <= -0.1f)
+		{
+			v = -1;
+		}
+		else
+		{
+			v = 0;
+		}
 		anim.SetFloat(hFloat, h, 0.1f, Time.deltaTime);
 		anim.SetFloat(vFloat, v, 0.1f, Time.deltaTime);
 
 
-		sprint = Input.GetKey(KeyCode.LeftShift);
-
+		//sprint = Input.GetKey(KeyCode.LeftShift);
+		sprint = playerInput.actions["Jump"].triggered;
 
 		if (IsSprinting())
 		{

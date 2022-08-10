@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637956425723709181
-    m_Hash: 2230592865
+      ticks: 637957223942199650
+    m_Hash: 2945178153
   m_LockFileStatus:
     m_FilePath: D:/Development/Projects/Equester/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637956425723809215
-    m_Hash: 3991080262
+      ticks: 637957224098407530
+    m_Hash: 284872267
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: D:/Development/Projects/Equester/Packages
-m_EditorVersion: 2021.3.7f1 (24e8595d6d43)
+m_EditorVersion: 2021.3.8f1 (b30333d56e81)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.8.6
   testable: 0
@@ -604,12 +604,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.5
     nextVersion: 
-- packageId: com.unity.inputsystem@1.3.0
+- packageId: com.unity.inputsystem@1.4.1
   testable: 0
   isDirectDependency: 1
-  version: 1.3.0
+  version: 1.4.1
   source: 1
-  resolvedPath: D:\Development\Projects\Equester\Library\PackageCache\com.unity.inputsystem@1.3.0
+  resolvedPath: D:\Development\Projects\Equester\Library\PackageCache\com.unity.inputsystem@1.4.1
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -659,9 +659,8 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.4.1
     compatible:
-    - 1.3.0
     - 1.4.1
-    verified: 1.3.0
+    verified: 1.4.1
   dependencies:
   - name: com.unity.modules.uielements
     version: 1.0.0
@@ -694,16 +693,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637769972190000000
+  datePublishedTicks: 637915826600000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: 76d3fd182183dff9e9793431de614fd1e69e363c
+    revision: 640348c45464bc94b38877d83653512da2c90453
     path: 
   unityLifecycle:
-    version: 1.3.0
+    version: 1.4.1
     nextVersion: 
 - packageId: com.unity.test-framework@1.1.31
   testable: 0

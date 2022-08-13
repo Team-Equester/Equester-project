@@ -28,7 +28,6 @@ public class PlayerBasicCode : MonoBehaviour
 	private Vector3 colExtents;
 	private PlayerInput playerInput;
 	private Vector2 move;
-
 	public float GetH { get { return h; } }
 	public float GetV { get { return v; } }
 

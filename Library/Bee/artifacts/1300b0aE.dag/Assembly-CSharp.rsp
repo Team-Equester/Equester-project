@@ -365,6 +365,8 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/Scripts/AlphaCreate.cs"
+"Assets/Scripts/CollectibleSystem.cs"
 "Assets/Yong/Script/PlayerBasicCode.cs"
 "Assets/Yong/Script/PlayerMoveCode.cs"
 "Assets/Yong/Script/ThirdPerson.cs"

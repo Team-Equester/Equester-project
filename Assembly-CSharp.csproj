@@ -65,22 +65,30 @@
     <Compile Include="Assets\Scripts\Level5\Dialogue.cs" />
     <Compile Include="Assets\Scripts\RotateModels.cs" />
     <Compile Include="Assets\Scripts\Movable.cs" />
+    <Compile Include="Assets\Scripts\Level2\ActionScript.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\Level5\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\AlphaCreate.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Scripts\Level2\Item.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\HelperScript.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\RestrictControl.cs" />
     <Compile Include="Assets\Scripts\TestTouch.cs" />
     <Compile Include="Assets\Scripts\ChangeableControl.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Scripts\Level2\UI_Inventory.cs" />
+    <Compile Include="Assets\Scripts\Level2\SpecialPlayerControls.cs" />
+    <Compile Include="Assets\Scripts\Level2\ItemAssets.cs" />
     <Compile Include="Assets\Yong\Script\PlayerMoveCode.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\Level2\InventoryManager.cs" />
     <Compile Include="Assets\Yong\Script\PlayerBasicCode.cs" />
     <Compile Include="Assets\Yong\Script\ThirdPerson.cs" />
     <Compile Include="Assets\Scripts\CollectibleSystem.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scripts\Level4\TouchHelper.cs" />
+    <Compile Include="Assets\Scripts\Level4\AnswerChecker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

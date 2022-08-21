@@ -7,6 +7,8 @@ TagManager:
   - Food
   - Clickable
   - JunkFood
+  - PaperBall
+  - Cans
   layers:
   - Default
   - TransparentFX

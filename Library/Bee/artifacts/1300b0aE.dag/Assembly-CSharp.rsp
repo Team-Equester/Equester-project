@@ -383,6 +383,7 @@
 "Assets/Scripts/Level5/Dialogue.cs"
 "Assets/Scripts/Level5/DialogueSystem.cs"
 "Assets/Scripts/Level5/DialogueTrigger.cs"
+"Assets/Scripts/MainMenu/LevelSelect.cs"
 "Assets/Scripts/Movable.cs"
 "Assets/Scripts/PlayerControl.cs"
 "Assets/Scripts/RotateModels.cs"

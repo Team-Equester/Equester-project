@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Level2\Item.cs" />
     <Compile Include="Assets\Scripts\HelperScripts\HelperScript.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\LevelSelect.cs" />
     <Compile Include="Assets\Scripts\Level4\AnswerChecker.cs" />
     <Compile Include="Assets\RestrictControl.cs" />
     <Compile Include="Assets\Scripts\TestTouch.cs" />
@@ -89,7 +90,6 @@
     <Compile Include="Assets\Yong\Script\ThirdPerson.cs" />
     <Compile Include="Assets\Scripts\CollectibleSystem.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\MainMenu\LevelSelect.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -108,6 +108,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

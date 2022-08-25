@@ -1898,7 +1898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Do You Want To Die?
+  m_text: You can't go outside.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2547,6 +2547,63 @@ MonoBehaviour:
   Food: {fileID: 1811368736}
   Junk: {fileID: 2039787312}
   GameOverScreen: {fileID: 26327961}
+--- !u!1001 &612195482616771520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 21.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966769180717845275, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450817508011135393, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
+      propertyPath: m_Name
+      value: RoadGreen
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b691b66014673c4899c0564e3b7f241, type: 3}
 --- !u!1001 &1109541231519125263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2791,63 +2848,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86e145a8508d2134da53d823f54768e1, type: 3}
---- !u!1001 &2171492073770241310
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1361170487174271861, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_Name
-      value: Road
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 21.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1848738591626545615, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d9ae0ccca3c2138499898a81a42858dc, type: 3}
 --- !u!1001 &4809960670962321781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2924,6 +2924,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 543450653546484983}
+    - target: {fileID: 4856237207673387622, guid: 52b2196d002984c4cbc00b4e33513af2, type: 3}
+      propertyPath: camOffset.z
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 4856237207673387622, guid: 52b2196d002984c4cbc00b4e33513af2, type: 3}
       propertyPath: playerInput
       value: 

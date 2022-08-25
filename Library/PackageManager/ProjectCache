@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957223942199650
-    m_Hash: 2945178153
+      ticks: 637970105692957686
+    m_Hash: 3154967673
   m_LockFileStatus:
     m_FilePath: D:/Development/Projects/Equester/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957224098407530
-    m_Hash: 284872267
+      ticks: 637970105692957686
+    m_Hash: 4095290697
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -658,9 +658,11 @@ m_ResolvedPackages:
     - 1.2.0
     - 1.3.0
     - 1.4.1
+    - 1.4.2
     compatible:
     - 1.4.1
-    verified: 1.4.1
+    - 1.4.2
+    verified: 1.4.2
   dependencies:
   - name: com.unity.modules.uielements
     version: 1.0.0
@@ -3230,6 +3232,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3241,6 +3244,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
@@ -3321,9 +3325,11 @@ m_ResolvedPackages:
     - 1.4.0
     - 1.4.1
     - 1.4.2
+    - 1.4.3
     compatible:
     - 1.4.2
-    verified: 1.4.2
+    - 1.4.3
+    verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0

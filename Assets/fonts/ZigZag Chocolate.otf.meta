@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2600625cc05749046959c7bc5e89c658
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - ZigZag Chocolate
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 543d5db59d25b3642a7dfa256a019d90, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

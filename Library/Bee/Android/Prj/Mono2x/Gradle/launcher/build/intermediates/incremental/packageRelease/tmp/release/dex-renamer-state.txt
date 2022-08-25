@@ -1,4 +1,4 @@
-#Tue Aug 23 14:02:20 IST 2022
+#Wed Aug 24 14:46:03 IST 2022
 base.0=D\:\\Development\\Projects\\Equester\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

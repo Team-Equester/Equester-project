@@ -31,12 +31,14 @@ public class CollectibleSystem : MonoBehaviour
             Destroy(collision.gameObject);
             score += 5;
             totalFood--;
+            FindObjectOfType<SoundManager>().Play("Eat");
         }
         else if (collision.gameObject.tag == "JunkFood")
         {
             Destroy(collision.gameObject);
             score -= 5;
             totalJunk--;
+            FindObjectOfType<SoundManager>().Play("Eat");
         }
         if (score == 0 || (totalFood == 0 && totalJunk == 0) || totalFood == 0)
         {

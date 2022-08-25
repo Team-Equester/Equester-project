@@ -57,11 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Level3\Movement.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\EventPlace.cs" />
     <Compile Include="Assets\Scripts\Level5\DialogueSystem.cs" />
+    <Compile Include="Assets\Scripts\Sound\Sound.cs" />
     <Compile Include="Assets\Scripts\Level5\Dialogue.cs" />
     <Compile Include="Assets\Scripts\RotateModels.cs" />
     <Compile Include="Assets\Scripts\Movable.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets\Scripts\Level2\ItemAssets.cs" />
     <Compile Include="Assets\Yong\Script\PlayerMoveCode.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\HelperScripts\InfoHelper.cs" />
     <Compile Include="Assets\Scripts\Level4\TouchHelper.cs" />
     <Compile Include="Assets\Scripts\Level2\InventoryManager.cs" />
     <Compile Include="Assets\Yong\Script\PlayerBasicCode.cs" />

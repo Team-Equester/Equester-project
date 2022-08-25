@@ -9,6 +9,8 @@ TagManager:
   - JunkFood
   - PaperBall
   - Cans
+  - Barrier
+  - Key
   layers:
   - Default
   - TransparentFX

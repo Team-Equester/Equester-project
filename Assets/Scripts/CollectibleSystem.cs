@@ -11,17 +11,22 @@ public class CollectibleSystem : MonoBehaviour
     private int totalFood;
     private int totalJunk;
     public GameObject GameOverScreen;
+    public TextMeshProUGUI keyScore;
+    private int key = 0;
 
     private void Awake()
     {
         totalFood = Food.transform.childCount;
         totalJunk = Junk.transform.childCount;
         Debug.Log(totalFood + " " + totalJunk);
+        keyScore.text = "Keys : " + key;
+        key = 0;
     }
 
     void Update()
     {
         Score.text = "Score : " + score;
+        keyScore.text = "Keys : " + key;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -40,9 +45,24 @@ public class CollectibleSystem : MonoBehaviour
             totalJunk--;
             FindObjectOfType<SoundManager>().Play("Eat");
         }
+        else if (collision.gameObject.tag == "Key")
+        {
+            Destroy(collision.gameObject);
+            key++;
+            keyScore.text = "Keys : " + key;
+        }
         if (score == 0 || (totalFood == 0 && totalJunk == 0) || totalFood == 0)
         {
             GameOverScreen.SetActive(true);
         }  
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(key > 0 && other.tag == "Barrier")
+        {
+            Destroy(other.gameObject);
+            key--;
+        }
     }
 }

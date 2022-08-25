@@ -31,19 +31,24 @@ public class CollectibleSystem : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Food")
+        //if (collision.gameObject.tag == "Food")
+        //{
+        //    Destroy(collision.gameObject);
+        //    score += 5;
+        //    totalFood--;
+        //    FindObjectOfType<SoundManager>().Play("Eat");
+        //}
+        //else if (collision.gameObject.tag == "JunkFood")
+        //{
+        //    Destroy(collision.gameObject);
+        //    score -= 5;
+        //    totalJunk--;
+        //    FindObjectOfType<SoundManager>().Play("Eat");
+        //}
+        if (key > 0 && collision.gameObject.tag == "Barrier")
         {
             Destroy(collision.gameObject);
-            score += 5;
-            totalFood--;
-            FindObjectOfType<SoundManager>().Play("Eat");
-        }
-        else if (collision.gameObject.tag == "JunkFood")
-        {
-            Destroy(collision.gameObject);
-            score -= 5;
-            totalJunk--;
-            FindObjectOfType<SoundManager>().Play("Eat");
+            key--;
         }
         else if (collision.gameObject.tag == "Key")
         {
@@ -59,10 +64,19 @@ public class CollectibleSystem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(key > 0 && other.tag == "Barrier")
+        if (other.tag == "JunkFood")
         {
             Destroy(other.gameObject);
-            key--;
+            score -= 5;
+            totalJunk--;
+            FindObjectOfType<SoundManager>().Play("Eat");
+        }
+        else if (other.tag == "Food")
+        {
+            Destroy(other.gameObject);
+            score += 5;
+            totalFood--;
+            FindObjectOfType<SoundManager>().Play("Eat");
         }
     }
 }

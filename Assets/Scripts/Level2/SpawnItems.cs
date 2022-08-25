@@ -6,8 +6,7 @@ public class SpawnItems : MonoBehaviour
 {
     public GameObject cans;
     public Transform[] waste;
-    public Animator anim;
-    public GameObject ActionButton;
+    private Animator anim;
     private SpecialPlayerControls playerInventory;
     private UI_Inventory uiInventory;
 
@@ -25,14 +24,34 @@ public class SpawnItems : MonoBehaviour
             {
                 Instantiate(cans, child);
             }
+            Destroy(other.gameObject);
         }
-        if(other.tag == "Dustbin" && playerInventory.recallObject() != null)
+        if (other.tag == "Dustbin" && playerInventory.recallObject() != null)
         {
             Transform Dustbin = other.transform.Find("DustbinCan");
             Dustbin.Find("Plane.006").gameObject.SetActive(true);
             anim = Dustbin.GetComponent<Animator>();
             anim.SetBool("isThrow", true);
             uiInventory.UseItem();
+            StopAllCoroutines();
+            StartCoroutine(EndAnim(Dustbin,"Plane.006"));
         }
+        if (other.tag == "DustBinP" && playerInventory.recallObject() != null)
+        {
+            Transform Dustbin = other.transform.Find("TrashPaperBall");
+            Dustbin.Find("Sphere").gameObject.SetActive(true);
+            anim = Dustbin.GetComponent<Animator>();
+            anim.SetBool("isThrow", true);
+            uiInventory.UseItem();
+            StopAllCoroutines();
+            StartCoroutine(EndAnim(Dustbin,"Sphere"));
+        }
+    }
+
+    IEnumerator EndAnim( Transform Dustbin , string obj)
+    {
+        yield return new WaitForSeconds(3);
+        anim.SetBool("isThrow", false);
+        Dustbin.Find(obj).gameObject.SetActive(false);
     }
 }

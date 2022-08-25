@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3045573197615300228}
   - component: {fileID: 3300775493073246573}
+  - component: {fileID: 503079010}
   m_Layer: 0
   m_Name: Juice
-  m_TagString: Untagged
+  m_TagString: Cans
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2382364635492721726}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.51, z: 1.91}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
@@ -46,6 +47,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.494523, y: 1.4426489, z: 0.48676658}
   m_Center: {x: 0.0035698116, y: 0.7123848, z: 0.015704632}
+--- !u!95 &503079010
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2382364635492721726}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc6a4a994ec93014fbdb76c3217f176b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6665916663094598887
 GameObject:
   m_ObjectHideFlags: 0

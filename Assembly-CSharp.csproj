@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Movable.cs" />
     <Compile Include="Assets\Scripts\Level2\ActionScript.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Scripts\Level2\SpawnItems.cs" />
     <Compile Include="Assets\Scripts\Level5\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\AlphaCreate.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />

@@ -376,6 +376,7 @@
 "Assets/Scripts/Level2/InventoryManager.cs"
 "Assets/Scripts/Level2/Item.cs"
 "Assets/Scripts/Level2/ItemAssets.cs"
+"Assets/Scripts/Level2/SpawnItems.cs"
 "Assets/Scripts/Level2/SpecialPlayerControls.cs"
 "Assets/Scripts/Level2/UI_Inventory.cs"
 "Assets/Scripts/Level3/Movement.cs"

@@ -31,4 +31,10 @@ public class SpecialPlayerControls : MonoBehaviour
             uiInventory.ActionButton.SetActive(true);
         }
     }
+
+    public Sprite recallObject()
+    {
+        Debug.Log(uiInventory.itemSlot.GetComponent<Image>().sprite);
+        return uiInventory.itemSlot.GetComponent<Image>().sprite;
+    }
 }

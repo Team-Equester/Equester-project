@@ -11,6 +11,8 @@ TagManager:
   - Cans
   - Barrier
   - Key
+  - Dustbin
+  - Spawner
   layers:
   - Default
   - TransparentFX

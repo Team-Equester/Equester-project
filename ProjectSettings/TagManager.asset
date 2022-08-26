@@ -15,6 +15,7 @@ TagManager:
   - Spawner
   - SpawnerP
   - DustBinP
+  - Door
   layers:
   - Default
   - TransparentFX
